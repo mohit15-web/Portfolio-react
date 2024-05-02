@@ -12,11 +12,11 @@ const Navbar = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'Skills' },
-    { id: 3, text: 'Projects' },
-    { id: 4, text: 'Contact' },
+    { id: 1, text: 'Skills', path: '#skills' },
+    { id: 2, text: 'Projects', path: '#projects' },
+    { id: 3, text: 'Contact', path: '#footer' },
   ];
+
 
   return (
     <div className='bg-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
@@ -30,7 +30,7 @@ const Navbar = () => {
             key={item.id}
             className='p-4 hover:text-gray-400 hover:underline m-2 cursor-pointer duration-300 text-xl font-bold'
           >
-            {item.text}
+            <a href={item.path}>{item.text}</a> {/* Use Link for navigation */}
           </li>
         ))}
       </ul>
@@ -53,11 +53,10 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-4 border-b rounded-xl duration-300 hover:text-black cursor-pointer border-gray-600'
-          >
-            {item.text}
+            <li key={item.id}>
+            <a href={item.path} onClick={() => handleNavClick(item.path)}>
+              {item.text}
+            </a>
           </li>
         ))}
       </ul>

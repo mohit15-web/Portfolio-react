@@ -1,24 +1,40 @@
-import { useEffect } from "react";
-import { Projects } from "./components/project/Projects";
-import { cursorJs } from "./components/cursor/cursorJs";
 import Cursor from "./components/cursor/Cursor";
 import Navbar from "./components/navbar/Navbar";
 import ProfileSection from "./components/profile/Profile";
 import { CardHoverEffectDemo } from "./components/skills/CardHoverEffectDemo";
+import { Projects } from "./components/project/Projects";
 import Footer from "./components/footer/Footer";
-import { ProjectCard } from "./components/project/ProjectCard";
+import { cursorJs } from "./components/cursor/cursorJs";
+import { useEffect } from "react";
+
 function App() {
   useEffect(() => {
     cursorJs();
   }, []);
+
   return (
     <div className="container bg-black">
       <Cursor />
       <Navbar />
-      <ProfileSection/>
-      <CardHoverEffectDemo/>
-      <Projects />
-      {/* <Footer/> */}
+      <div id="/">
+      <ProfileSection />
+      </div>
+      <div id="skills">
+        <CardHoverEffectDemo />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="footer">
+        <Footer />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+      </nav>
     </div>
   );
 }

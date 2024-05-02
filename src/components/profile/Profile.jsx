@@ -6,8 +6,9 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const ProfileSection = () => {
   const handleResumeClick = () => {
-    window.open('./assets/mohit-resume.pdf');
+    window.open('../../assets/Resume.pdf');
   };
+
 
   const handleContactClick = () => {
     window.location.href = './#contact';
@@ -36,7 +37,7 @@ const ProfileSection = () => {
             Download CV
           </button>
           <button className="btn btn-color-1 pt-2" onClick={handleContactClick}>
-            Contact Info
+            <a href="#footer">Contact Info</a>
           </button>
         </div>
         <div id="socials-container">
