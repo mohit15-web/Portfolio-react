@@ -28,13 +28,6 @@ function App() {
       <div id="footer">
         <Footer />
       </div>
-      <nav>
-        <ul>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#footer">Footer</a></li>
-        </ul>
-      </nav>
     </div>
   );
 }

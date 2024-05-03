@@ -53,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
-            <li key={item.id}>
+            <li key={item.id} className='text-center py-2'>
             <a href={item.path} onClick={() => handleNavClick(item.path)}>
               {item.text}
             </a>
