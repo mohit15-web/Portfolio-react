@@ -6,6 +6,7 @@ import { Projects } from "./components/project/Projects";
 import Footer from "./components/footer/Footer";
 import { cursorJs } from "./components/cursor/cursorJs";
 import { useEffect } from "react";
+import { SparklesPreview } from "./components/Sparkle";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
       </div>
       <div id="footer">
         <Footer />
+        {/* <SparklesPreview/> */}
       </div>
     </div>
   );

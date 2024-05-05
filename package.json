@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "clsx": "^2.1.0",
-    "framer-motion": "^11.0.28",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
     "next": "latest",
     "next-link": "^2.0.0",
@@ -19,7 +22,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
     "react-router-dom": "^6.23.0",
-    "tailwind-merge": "^2.2.2"
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
