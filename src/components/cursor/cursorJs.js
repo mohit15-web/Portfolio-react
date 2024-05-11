@@ -63,7 +63,7 @@ export function cursorJs() {
 
   window.addEventListener("mousemove", getCursorPosition);
   document
-    .querySelector(".container")
+    .querySelector(".appDiv")
     .addEventListener("mouseleave", function () {
       gsap.to(".circle", {
         scale: 0,

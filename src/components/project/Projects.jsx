@@ -3,7 +3,6 @@ import buildResume from "../../assets/buildresume.png";
 import chatgpt from "../../assets/chatgpt.png";
 import Passwordgenerator from "../../assets/passwordgenerator.png";
 import todo from "../../assets/todo.png";
-import "./Project.css";
 import { ProjectCard } from "./ProjectCard";
 
 export function Projects() {

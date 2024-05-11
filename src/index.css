@@ -6,6 +6,11 @@
 html{
   scroll-behavior: smooth;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 :root {
   font-family: "Zeyada", cursive;
@@ -20,31 +25,10 @@ html{
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
-  }
-  #contact,
-  #projects {
-    height: fit-content;
-  }
-}
+
 
 @media screen and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
-  #hamburger-nav {
-    display: flex;
-  }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
+ 
   #profile,
   .section-container {
     display: block;
@@ -64,9 +48,7 @@ html{
     height: 275px;
     margin: 0 auto 2rem;
   }
-  .about-containers {
-    margin-top: 0;
-  }
+ 
 }
 
 @media screen and (max-width: 600px) {

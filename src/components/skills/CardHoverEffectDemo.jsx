@@ -2,7 +2,7 @@ import { HoverEffect } from "../../ui/CardHover";
 
 export function CardHoverEffectDemo() {
   return (
-    <div className="max-w-5xl mx-auto px-8 mt-60 xl:mt-10 2xl:mt-20">
+    <div className="max-w-5xl mx-auto px-8 mt-80 xl:mt-32 2xl:mt-2">
       <h1 className="text-white text-[4rem] text-center" >Skills</h1>
       <HoverEffect items={projects} />
     </div>

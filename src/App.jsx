@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   return (
-    <div className="container bg-black">
+    <div className="appDiv bg-black">
       <Cursor />
       <Navbar />
       <div id="/">
