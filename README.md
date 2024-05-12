@@ -1,6 +1,6 @@
 # My Portfolio
 
-![Portfolio Preview](/path/to/your/portfolio/screenshot.png)
+[Portfolio Preview](https://portfolio-react-seven-ochre.vercel.app/)
 
 🌟 Welcome to my portfolio repository! 🚀 This project showcases my skills and projects as a frontend developer and UI/UX designer.
 
