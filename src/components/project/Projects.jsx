@@ -4,8 +4,7 @@ import chatgpt from "../../assets/chatgpt.png";
 import Passwordgenerator from "../../assets/passwordgenerator.png";
 import todo from "../../assets/todo.png";
 import { ProjectCard } from "./ProjectCard";
-import { motion, useAnimation, useInView } from "framer-motion";
-import { useEffect, useRef } from "react";
+
 
 export function Projects() {
   const cards = [
@@ -54,53 +53,13 @@ export function Projects() {
     window.open(link, "_blank");
   };
 
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-  const mainControls = useAnimation();
-  useEffect(() => {
-    console.log(isInView);
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
+
 
   return (
     <div
-      ref={ref}
       className="py-10 w-full cursor-pointer z-100 bg-black"
-      style={{
-        position: "relative",
-        overflow: "hidden",
-      }}
     >
-      <motion.div
-        variants={{
-          hidden: {
-            opacity: 0,
-            y: 75,
-          },
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{
-          duration: 0.5,
-          delay: 0.5,
-        }}
-        style={{
-          position: "absolute",
-          top: 4,
-          bottom: 4,
-          left: 0,
-          right: 0,
-          zIndex: 20,
-        }}
-      >
         <h1 className="text-white text-[4rem] text-center">Projects</h1>
-      </motion.div>
 
       <ProjectCard
         projects={cards}

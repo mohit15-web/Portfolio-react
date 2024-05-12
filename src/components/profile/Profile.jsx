@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/no-unescaped-entities */
 import "./profile.css"
 import mohitPic from "../../assets/mohit.png"
 import { FaGithub } from "react-icons/fa";
