@@ -33,10 +33,10 @@ const ProfileSection = () => {
         <h1 className="title text-white text-6xl">Mohit Chaudhary</h1>
         <p className="section__text__p2 text-slate-500 text-4xl">Frontend Developer</p>
         <div className="btn-container">
-          <button className="btn btn-color-2 text-white pt-2" onClick={handleResumeClick}>
+          <button className=" text-white border px-3 font-bold rounded-lg py-1 hover:text-black hover:bg-white" onClick={handleResumeClick}>
             Download CV
           </button>
-          <button className="btn btn-color-1 pt-2" onClick={handleContactClick}>
+          <button className="btn btn-color-1" onClick={handleContactClick}>
             <a href="#footer">Contact Info</a>
           </button>
         </div>
