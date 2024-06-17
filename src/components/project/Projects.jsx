@@ -4,29 +4,31 @@ import chatgpt from "../../assets/chatgpt.png";
 import Passwordgenerator from "../../assets/passwordgenerator.png";
 import todo from "../../assets/todo.png";
 import { ProjectCard } from "./ProjectCard";
-
-
+import movieImg from '../../assets/movie.png'
+import foodImg from '../../assets/food.png'
 export function Projects() {
   const cards = [
     {
       id: 1,
+      title: "EatsExpress",
+      thumbnail: foodImg,
+      Githublink: "https://github.com/mohit15-web/Food-Delivery-Website",
+      Demolink: "https://food-delivery-website-sigma-ochre.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "MoviesMod",
+      thumbnail: movieImg,
+      Githublink:
+        "https://github.com/mohit15-web/MoviesMod",
+      Demolink: "https://movies-mod-navy.vercel.app/",
+    },
+    {
+      id: 3,
       title: "Snitch Clone",
       thumbnail: snitchImage,
       Demolink: "https://snitch-vert.vercel.app/",
       Githublink: "https://github.com/mohit15-web/Snitch",
-    },
-    {
-      id: 2,
-      title: "ChatGPT Clone",
-      thumbnail: chatgpt,
-      Demolink: "https://chat-gpt-clone-roan.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "GroceryBud(Todo)",
-      thumbnail: todo,
-      Githublink: "https://github.com/mohit15-web/GroceryBud",
-      Demolink: "https://grocery-bud-five-dusky.vercel.app/",
     },
     {
       id: 4,
@@ -36,13 +38,12 @@ export function Projects() {
       Demolink: "https://mohit15-web.github.io/InterviewReadywithAI/",
     },
     {
-      id: 5,
-      title: "PasswordGenerator",
-      thumbnail: Passwordgenerator,
-      Githublink:
-        "https://github.com/mohit15-web/ReactProjects/tree/main/PasswordGenerator",
-      Demolink: "https://react-projects-11rv.vercel.app/",
+      id: 3,
+      title: "ChatGPT Clone",
+      thumbnail: chatgpt,
+      Demolink: "https://chat-gpt-clone-roan.vercel.app/",
     },
+    
   ];
 
   const openSnitchGithub = (link) => {

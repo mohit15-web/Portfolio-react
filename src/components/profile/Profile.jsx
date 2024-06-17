@@ -3,10 +3,10 @@ import "./profile.css"
 import mohitPic from "../../assets/mohit.png"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-
+import pdf from '../../assets/Resume.pdf'
 const ProfileSection = () => {
   const handleResumeClick = () => {
-    window.open('../../assets/Resume.pdf');
+    window.open(pdf);
   };
 
 
