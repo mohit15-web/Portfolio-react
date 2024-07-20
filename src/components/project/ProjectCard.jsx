@@ -1,10 +1,9 @@
-import React from "react";
 import { CardBody, CardContainer, CardItem } from "../../ui/3Dcard";
 
-export function ProjectCard({ projects,openGithub, openLive  }) {
+export function ProjectCard({ projects, openGithub, openLive }) {
   return (
     <div className="flex justify-center items-center flex-wrap gap-10 px-4">
-      {projects.map((project) => (
+      {projects?.map((project) => (
         <CardContainer key={project.id} className="inter-var">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto 2xl:w-[21rem] sm:w-[20rem] h-auto rounded-xl p-6 border ">
             <CardItem
@@ -22,8 +21,13 @@ export function ProjectCard({ projects,openGithub, openLive  }) {
                 alt="thumbnail"
               />
             </CardItem>
+            <div className="flex justify-end items-center gap-2 pt-4">
+              {project?.tech?.map((tech) => (
+                <img src={tech} alt="tech" width="40" height="40" key={tech} />
+              ))}
+            </div>
             <div className="flex justify-around items-center mt-10">
-            <CardItem
+              <CardItem
                 translateZ={20}
                 onClick={() => openGithub(project.Githublink)} // Invoke openGithub with project link
                 className="px-4 py-2 -mt-4 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"

@@ -36,24 +36,24 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div onClick={handleNav} className='block md:hidden top-10 right-10 fixed'>
+        {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={20} />}
       </div>
 
       {/* Mobile Navigation Menu */}
       <ul
         className={
           nav
-            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
+            ? 'fixed md:hidden left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-50'
             : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
         {/* Mobile Logo */}
-        <h1 className='w-full text-3xl font-bold text-white m-4'>Mohit Chaudhary</h1>
+        <h1 className='w-full text-sm lg:text-3xl xl:text-3xl text-center font-bold text-white m-4'>Mohit Chaudhary</h1>
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
-            <li key={item.id} className='text-center py-2'>
+            <li key={item.id} className='text-center py-2 flex flex-col justify-center'>
             <a href={item.path} onClick={() => handleNavClick(item.path)}>
               {item.text}
             </a>

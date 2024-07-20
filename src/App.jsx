@@ -17,7 +17,7 @@ function App() {
       <Cursor />
       <Navbar />
       <div id="/">
-      <ProfileSection />
+        <ProfileSection />
       </div>
       <div id="skills">
         <CardHoverEffectDemo />

@@ -1,8 +1,6 @@
 import snitchImage from "../../assets/snitch.png";
 import buildResume from "../../assets/buildresume.png";
 import chatgpt from "../../assets/chatgpt.png";
-import Passwordgenerator from "../../assets/passwordgenerator.png";
-import todo from "../../assets/todo.png";
 import { ProjectCard } from "./ProjectCard";
 import movieImg from '../../assets/movie.png'
 import foodImg from '../../assets/food.png'
@@ -14,6 +12,7 @@ export function Projects() {
       thumbnail: foodImg,
       Githublink: "https://github.com/mohit15-web/Food-Delivery-Website",
       Demolink: "https://food-delivery-website-sigma-ochre.vercel.app/",
+      tech:["https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/redux-original.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/BackendService/firebase-icon.svg" ]
     },
     {
       id: 2,
@@ -22,6 +21,7 @@ export function Projects() {
       Githublink:
         "https://github.com/mohit15-web/MoviesMod",
       Demolink: "https://movies-mod-navy.vercel.app/",
+      tech:["https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/redux-original.svg" ]
     },
     {
       id: 3,
@@ -29,6 +29,7 @@ export function Projects() {
       thumbnail: snitchImage,
       Demolink: "https://snitch-vert.vercel.app/",
       Githublink: "https://github.com/mohit15-web/Snitch",
+      tech:["https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/redux-original.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/BackendService/firebase-icon.svg" ]
     },
     {
       id: 4,
@@ -36,12 +37,15 @@ export function Projects() {
       thumbnail: buildResume,
       Githublink: "https://github.com/mohit15-web/InterviewReadywithAI",
       Demolink: "https://mohit15-web.github.io/InterviewReadywithAI/",
+      tech:["https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/html5-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/css3-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Languages/javascript-original.svg"]
     },
     {
       id: 3,
       title: "ChatGPT Clone",
       thumbnail: chatgpt,
       Demolink: "https://chat-gpt-clone-roan.vercel.app/",
+      tech:["https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/react-original-wordmark.svg","https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Skills/Frontend/tailwindcss-icon.svg"]
+      
     },
     
   ];
