@@ -1,5 +1,5 @@
 import { CardBody, CardContainer, CardItem } from "../../ui/3Dcard";
-
+import PropTypes from "prop-types";
 export function ProjectCard({ projects, openGithub, openLive }) {
   return (
     <div className="flex justify-center items-center flex-wrap gap-10 px-4">
@@ -21,10 +21,13 @@ export function ProjectCard({ projects, openGithub, openLive }) {
                 alt="thumbnail"
               />
             </CardItem>
-            <div className="flex justify-end items-center gap-2 pt-4">
+            <div className="flex justify-between items-center gap-2 pt-6">
+              <h1 className="text-lg font-bold">Tech Stack:</h1>
+              <div className="flex gap-2">
               {project?.tech?.map((tech) => (
                 <img src={tech} alt="tech" width="40" height="40" key={tech} />
               ))}
+              </div>
             </div>
             <div className="flex justify-around items-center mt-10">
               <CardItem
@@ -47,4 +50,10 @@ export function ProjectCard({ projects, openGithub, openLive }) {
       ))}
     </div>
   );
+}
+
+ProjectCard.propTypes = {
+  projects: PropTypes.array,
+  openGithub: PropTypes.func,
+  openLive: PropTypes.func,
 }
