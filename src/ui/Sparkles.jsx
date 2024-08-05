@@ -27,7 +27,6 @@ const SparklesCore = ({
 
   const particlesLoaded = async (container) => {
     if (container) {
-      console.log(container);
       controls.start({
         opacity: 1,
         transition: {

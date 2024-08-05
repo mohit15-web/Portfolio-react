@@ -31,7 +31,7 @@ const ProfileSection = () => {
       <div className="section__text">
         <p className="section__text__p1 text-slate-500 text-4xl">Hello, I'm</p>
         <h1 className="title text-white text-6xl">Mohit Chaudhary</h1>
-        <p className="section__text__p2 text-slate-500 text-4xl">Frontend Developer</p>
+        <p className="section__text__p2 text-slate-500 text-4xl">Full-Stack Developer</p>
         <div className="btn-container">
           <button className=" text-white border px-3 font-bold rounded-lg py-1 hover:text-black hover:bg-white" onClick={handleResumeClick}>
             Download CV
