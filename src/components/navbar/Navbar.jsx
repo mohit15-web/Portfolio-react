@@ -37,7 +37,7 @@ const Navbar = () => {
       </ul>
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className="block md:hidden top-9 right-6 fixed">
+      <div onClick={handleNav} className="block md:hidden top-9 right-6 fixed z-50">
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={24} />}
       </div>
 
@@ -45,14 +45,14 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-50"
-            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
+            ? "fixed md:hidden left-2 top-8 h-32 rounded-md shadow-2xl  w-[50%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500 z-50"
+            : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] h-28 rounded-md shadow-2xl"
         }
       >
         {/* Mobile Logo */}
-        <h1 className="w-full text-sm lg:text-3xl xl:text-3xl text-center font-bold text-white m-4">
+        {/* <h1 className="w-full text-sm lg:text-3xl xl:text-3xl text-center font-bold text-white m-4">
           Mohit Chaudhary
-        </h1>
+        </h1> */}
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
