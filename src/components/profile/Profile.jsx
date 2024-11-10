@@ -26,7 +26,7 @@ const ProfileSection = () => {
   return (
     <section id="profile">
       <div className="section__pic-container">
-        <img src={mohitPic} alt="mohit profile picture" className='mohitPic'/>
+        <img src={mohitPic} alt="mohit profile picture" className='mohitPic' loading="lazy"/>
       </div>
       <div className="section__text">
         <p className="section__text__p1 text-slate-500 text-4xl">Hello, I'm</p>

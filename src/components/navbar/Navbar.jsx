@@ -49,21 +49,20 @@ const Navbar = () => {
             : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%] h-28 rounded-md shadow-2xl"
         }
       >
-        {/* Mobile Logo */}
-        {/* <h1 className="w-full text-sm lg:text-3xl xl:text-3xl text-center font-bold text-white m-4">
-          Mohit Chaudhary
-        </h1> */}
 
         {/* Mobile Navigation Items */}
         {navItems.map((item) => (
-          <li
-            key={item.id}
-            className="text-center py-2 flex flex-col justify-center"
-          >
+       <li
+       key={item.id}
+       className="text-center py-3 px-4 flex flex-col justify-center rounded-md 
+                  bg-gradient-to-r from-gray-800 via-gray-900 to-black 
+                  hover:bg-gradient-to-br hover:from-gray-700 hover:via-gray-800 hover:to-black 
+                  transform transition-all duration-300 ease-out
+                  hover:scale-105 active:scale-95 shadow-lg my-1"
+     >
             <a
               href={item.path}
               onClick={() => {
-                // handleNavClick(item.path);
                 setNav(!nav);
               }}
             >
